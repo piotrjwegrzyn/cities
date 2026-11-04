@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="utf-8">
+        <title>Cities</title>
+    </head>
+    <body>
+        <div>
+            <form class="form" id="counter-form" action="/" method="post">
+                <div>Cities counter</div>
+                <div>
+                    <input type="text"
+                        id="name_prefix"
+                        name="name_prefix"
+                        placeholder="type here" required>
+                </div>
+                <div>
+                    <input type="submit"
+                        value="Count cities">
+                </div>
+                {{ if ne .Amount "" }}
+                <div>{{ .Amount }}</div>
+                {{ end }}
+            </form>
+        </div>
+    </body>   
+</html>
